@@ -1,9 +1,6 @@
 # Folder build
 /target/
 
-# File Cargo.lock (untuk library)
-/Cargo.lock
-
 # File hasil build
 *.exe
 *.dll
