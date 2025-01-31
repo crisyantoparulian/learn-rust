@@ -1,0 +1,36 @@
+# Folder build
+/target/
+
+# File Cargo.lock (untuk library)
+/Cargo.lock
+
+# File hasil build
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.out
+
+# File profiling atau benchmark
+*.profdata
+*.gcov
+
+# File editor atau IDE
+.vscode/
+.idea/
+
+# File environment
+.env
+*.env
+
+# File log
+*.log
+logs/
+
+# File cache Cargo
+.cargo/
+
+# File testing atau debugging
+*.test
+*.debug
