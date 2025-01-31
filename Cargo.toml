@@ -3,6 +3,10 @@ name = "rest_api"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "learn_rust"
+path = "src/main.rs"
+
 [dependencies]
 actix-web = "4.0"
 serde = { version = "1.0", features = ["derive"] }
