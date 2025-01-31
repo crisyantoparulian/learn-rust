@@ -1,13 +1,14 @@
+options:
+  logging: CLOUD_LOGGING_ONLY  # Or use `gs://learn-rust-bucket` for a storage bucket
+  logging_bucket: "gs://learn-rust-bucket"
+
 steps:
-  # Step 1: Build the Docker image
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "gcr.io/$PROJECT_ID/my-rust-app", "."]
-
-  # Step 2: Push the image to Google Container Registry
+  
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/my-rust-app"]
 
-  # Step 3: Deploy to Cloud Run
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     entrypoint: gcloud
     args:
