@@ -1,6 +1,6 @@
 options:
-  logging: CLOUD_LOGGING_ONLY  # Or use `gs://learn-rust-bucket` for a storage bucket
-  logging_bucket: "gs://learn-rust-bucket"
+  logging: CLOUD_LOGGING_ONLY  # Logs go to Cloud Logging
+  default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET  # Uses a regional user-owned bucket
 
 steps:
   - name: "gcr.io/cloud-builders/docker"
