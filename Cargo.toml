@@ -12,3 +12,29 @@ actix-web = "4.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 dotenv = "0.15"  # Add dotenv crate for loading .env file
+chrono = "0.4" # timestamp
+sha2 = "0.10" # hashing
+warp = "0.3"
+md5 = "0.7"
+uuid = { version = "1", features = ["v4"] }
+tokio = { version = "1", features = ["full"] }
+oauth2 = { version = "4", features = ["reqwest"] }
+hyper = "0.14"
+reqwest = { version = "0.11", features = ["json"] }
+lazy_static = "1.5.0"
+jsonwebtoken = "9"
+async-trait = "0.1.87"
+axum = "0.8.1"
+
+[dependencies.sqlx]
+version = "0.7.2"
+default-features = false
+features = [
+  "postgres",
+  "runtime-tokio-rustls",
+  "macros",
+  "uuid",
+  "chrono",
+  "migrate",
+  "json",
+]
